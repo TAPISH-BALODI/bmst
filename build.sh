@@ -1,5 +1,5 @@
 venv/bin/activate
-
+echo $PYTHONPATH
 # Install project dependencies
 pip install -r requirements.txt
 
