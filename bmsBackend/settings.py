@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'busdb',
         'USER': 'root',
-        'PASSWORD': 'Inwearth@07',
+        'PASSWORD': 'Dt734*26',
         'HOST': 'localhost',   # Or the hostname where your MySQL server is running
         'PORT': '3306',        # MySQL default port
     }
