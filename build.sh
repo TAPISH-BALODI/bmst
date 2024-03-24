@@ -1,5 +1,5 @@
 
-venv/Scripts/activate.bat
+source venv/Scripts/activate.bat
 
 
 pip install -r requirements.txt
