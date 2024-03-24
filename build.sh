@@ -1,4 +1,5 @@
-source ./venv/Scripts/activate
+python -m virtualenv venv
+source venv/Scripts/activate
 
 # Install dependencies
 pip install -r requirements.txt
