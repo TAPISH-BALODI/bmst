@@ -13,8 +13,7 @@ def main():
     os.environ['PYTHONPATH'] = 'venv/Scripts/activate'
 
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bmsBackend.settings')
-    print("-->>>> ENV",os.environ)
-    print("PYTHON PATHH",os.environ.get('PYTHONPATH'))
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
