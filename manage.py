@@ -5,6 +5,7 @@ import sys
 
 
 def main():
+    print("-->>>> ENV",os.environ)
     """Run administrative tasks."""
     # Add the path to your Django project
     current_path = os.path.dirname(os.path.abspath(__file__))
