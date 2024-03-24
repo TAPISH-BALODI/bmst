@@ -1,4 +1,4 @@
-venv/Scripts/activate.bat
+venv/Scripts/activate
 
 # Install dependencies
 pip install django
