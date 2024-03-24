@@ -1,7 +1,7 @@
 
 source venv/Scripts/activate
 
-
+pip install mysqlclient
 pip install -r requirements.txt
 
 
