@@ -1,13 +1,13 @@
 
-source venv/Scripts/activate.bat
+source venv/Scripts/activate
 
 
 pip install -r requirements.txt
 
 
-python manage.py migrate
+python3 manage.py migrate
 
 
-python manage.py collectstatic --noinput
+python3 manage.py collectstatic --noinput
 
 
