@@ -1,11 +1,12 @@
-venv/bin/activate
+source venv/bin/activate
 # Install project dependencies
-# pip install -r requirements.txt
+pip install -r requirements.txt
 
 # # Build static files (if applicable)
 # python manage.py collectstatic --noinput
 
 # # Perform migrations (if applicable)
-# python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
 
 python manage.py runserver
