@@ -7,8 +7,7 @@ import sys
 def main():
     print("-->>>> ENV",os.environ)
     print("PYTHON PATHH",os.environ.get('PYTHONPATH'))
-    project_path = 'C:\Users\TAPISH\bmst-1'
-    sys.path.append(project_path)
+
     """Run administrative tasks."""
     # Add the path to your Django project
     current_path = os.path.dirname(os.path.abspath(__file__))
