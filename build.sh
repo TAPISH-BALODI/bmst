@@ -1,10 +1,13 @@
-# Install project dependencies
+source venv/bin/activate
+
+# Install dependencies
 pip install -r requirements.txt
 
-# # Build static files (if applicable)
-# python manage.py collectstatic --noinput
-
-# # Perform migrations (if applicable)
+# Run migrations (if applicable)
 python manage.py migrate
 
-python manage.py runserver
+# Collect static files (if applicable)
+python manage.py collectstatic --noinput
+
+# Deactivate the virtual environment
+deactivate
