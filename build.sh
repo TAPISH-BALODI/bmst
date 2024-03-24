@@ -1,7 +1,7 @@
 source venv/Scripts/activate
-import MySQLdb
+
 # Install dependencies
-pip install Django
+pip install django
 pip install -r requirements.txt
 
 # Run migrations (if applicable)
@@ -12,4 +12,3 @@ python manage.py collectstatic --noinput
 
 # Deactivate the virtual environment
 deactivate
-python3 manage.py runserver
