@@ -1,3 +1,4 @@
+pip install virtualenv
 python -m virtualenv venv
 source venv/Scripts/activate
 
