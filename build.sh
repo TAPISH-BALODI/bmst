@@ -1,4 +1,4 @@
-venv/Scripts/activate
+source venv/Scripts/activate
 
 # Install dependencies
 pip install django
