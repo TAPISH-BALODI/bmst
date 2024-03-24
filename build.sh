@@ -5,7 +5,6 @@ pip install -r requirements.txt
 # python manage.py collectstatic --noinput
 
 # # Perform migrations (if applicable)
-source venv/bin/activate
 python manage.py migrate
 
 python manage.py runserver
