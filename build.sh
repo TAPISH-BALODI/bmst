@@ -1,5 +1,5 @@
 source venv/Scripts/activate
-
+import MySQLdb
 # Install dependencies
 pip install Django
 pip install -r requirements.txt
