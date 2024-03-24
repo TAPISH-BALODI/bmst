@@ -11,7 +11,7 @@ def main():
     # Add the path to your Django project
     current_path = os.path.dirname(os.path.abspath(__file__))
     sys.path.append(os.path.join(current_path, 'bmsBackend'))
-    os.environ['PYTHONPATH'] = '/'
+    os.environ['PYTHONPATH'] = 'venv/Scripts/activate'
 
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bmsBackend.settings')
     print("-->>>> ENV",os.environ)
