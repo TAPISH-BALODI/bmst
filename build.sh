@@ -1,4 +1,3 @@
-venv/bin/activate
 # Install project dependencies
 pip install -r requirements.txt
 
@@ -8,4 +7,5 @@ pip install -r requirements.txt
 # # Perform migrations (if applicable)
 python manage.py migrate
 
+source venv/bin/activate
 python manage.py runserver
