@@ -9,5 +9,6 @@ python manage.py migrate
 # Collect static files (if applicable)
 python manage.py collectstatic --noinput
 
+python manage.py runserver
 # Deactivate the virtual environment
 deactivate
