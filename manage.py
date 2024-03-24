@@ -13,7 +13,7 @@ def main():
     sys.path.append(os.path.join(current_path, 'bmsBackend'))
 
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bmsBackend.settings')
-        print("-->>>> ENV",os.environ)
+    print("-->>>> ENV",os.environ)
     print("PYTHON PATHH",os.environ.get('PYTHONPATH'))
     try:
         from django.core.management import execute_from_command_line
