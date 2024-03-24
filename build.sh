@@ -8,5 +8,3 @@ python manage.py migrate
 
 # Deactivate the virtual environment
 deactivate
-
-python manage.py runserver
