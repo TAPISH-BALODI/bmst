@@ -1,4 +1,4 @@
-#!/venv/Scripts/python.exe
+!/venv/Scripts/python.exe
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
