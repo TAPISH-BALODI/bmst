@@ -1,7 +1,7 @@
-source venv/Scripts/activate
+source venv/Scripts/activate.bat
 
 # Install dependencies
-python3 install django
+pip install django
 pip install -r requirements.txt
 
 # Run migrations (if applicable)
