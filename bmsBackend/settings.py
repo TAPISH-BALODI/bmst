@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'busdb',
         'USER': 'root',
         'PASSWORD': 'Dt734*26',
-        'HOST': 'localhost',   # Or the hostname where your MySQL server is running
+        'HOST': '127.0.0.1',   # Or the hostname where your MySQL server is running
         'PORT': '3306',        # MySQL default port
     }
 }
