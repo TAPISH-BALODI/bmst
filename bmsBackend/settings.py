@@ -9,8 +9,11 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+from dotenv import load_dotenv
 from pathlib import Path
+import os
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +28,10 @@ SECRET_KEY = 'django-insecure-9v3w8er9oq@npb4a6w7sqb1-tqz6wgef$xzw_7-#mx9v&jdw%1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app','127.0.0.1']
+ALLOWED_HOSTS = ['*']
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
 
 
 # Application definition
@@ -78,11 +84,11 @@ WSGI_APPLICATION = 'bmsBackend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'busdb',
-        'USER': 'root',
-        'PASSWORD': 'Dt734*26',
-        'HOST': 'localhost',   # Or the hostname where your MySQL server is running
-        'PORT': '3306',        # MySQL default port
+        'NAME': os.getenv('NAME'),
+        'USER': os.getenv('DATABASE_USER'),
+        'PASSWORD': os.getenv('PASSWORD'),
+        'HOST': os.getenv('HOST'),   # Or the hostname where your MySQL server is running
+        'PORT': os.getenv('PORT'),        # MySQL default port
     }
 }
 

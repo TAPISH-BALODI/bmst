@@ -1,13 +1,9 @@
-#!venv/Scripts/python.exe
+#!venv/bin/python3.exe
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
 
-
-
 def main():
-
-
     """Run administrative tasks."""
     # Add the path to your Django project
     current_path = os.path.dirname(os.path.abspath(__file__))

@@ -20,7 +20,20 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
     path('stations/', views.create_station),
     path('stations/all/', views.get_all_stations),
+    path('stations/<int:id>', views.update_station),
+
+    path('journey/', views.create_journey),
+    path('get_journey/<int:id>', views.get_journey),
+    path('journey/<int:id>', views.update_journey),
+    path('end_journey/<int:id>', views.end_journey),
+    
+    
+    path('journey_analytics/', views.get_journey_analytics),
+    path('overall_analytics/', views.overall_analytics),
+    
+    
 ]
 
