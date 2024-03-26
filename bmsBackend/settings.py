@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'bmsBackend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('NAME'),
-        'USER': os.getenv('DATABASE_USER'),
-        'PASSWORD': os.getenv('PASSWORD'),
-        'HOST': os.getenv('HOST'),   # Or the hostname where your MySQL server is running
-        'PORT': os.getenv('PORT'),        # MySQL default port
+        'NAME': 'busdb',
+        'USER': 'root',
+        'PASSWORD': 'Dt734*26',
+        'HOST': 'localhost',   # Or the hostname where your MySQL server is running
+        'PORT': '3306',        # MySQL default port
     }
 }
 
