@@ -5,7 +5,7 @@ try:
         db='busdb',
         user='root',
         passwd='Dt734*26',
-        host='localhost',
+        host='127.0.0.1',
         port=3306
     )
     print("Connected to MySQL database successfully!")
